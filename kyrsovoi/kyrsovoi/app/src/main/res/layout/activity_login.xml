@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+
+        tools:context=".view.LoginActivity">
+
+        <ImageView
+            android:id="@+id/my_image"
+            android:scaleType="center"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/logo" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginLeft="@dimen/dimen30dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:background="@color/colorAccent" />
+
+        <!--  Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8dp"
+            android:layout_marginBottom="@dimen/dimen8dp"
+            android:paddingStart="@dimen/dimen24dp"
+            android:paddingEnd="@dimen/dimen24dp">
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/email"
+                android:padding="@dimen/dimen5dp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Password Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8dp"
+            android:layout_marginBottom="@dimen/dimen8dp"
+            android:paddingStart="@dimen/dimen24dp"
+            android:paddingEnd="@dimen/dimen24dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:backgroundTint="@color/colorAccent"
+
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen24dp"
+            android:layout_marginTop="@dimen/dimen24dp"
+            android:layout_marginRight="@dimen/dimen24dp"
+            android:layout_marginBottom="@dimen/dimen24dp"
+            android:background="@drawable/custom_button_border2"
+            android:text="@string/sign_in"
+            android:textColor="#DDA0B5"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dimen18sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginLeft="@dimen/dimen30dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen10dp"
+            android:gravity="center"
+            android:text="@string/new_customer_create_your_account"
+            android:textSize="@dimen/dimen14sp" />
+
+
+
+
+    </LinearLayout>
+</layout>

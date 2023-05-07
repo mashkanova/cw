@@ -1,0 +1,18 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort"
+        android:title="Фильтровать"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.PopupMenu"
+        tools:ignore="Instantiatable" />
+    <item  android:id="@+id/action_sort2"
+        android:title="Новая коллекция"
+        app:actionViewClass="androidx.appcompat.widget.PopupMenu"
+        tools:ignore="Instantiatable" />
+    <item  android:id="@+id/action_sort3"
+        android:title="Коллекция 2022"
+        app:actionViewClass="androidx.appcompat.widget.PopupMenu"
+        tools:ignore="Instantiatable" />
+</menu>

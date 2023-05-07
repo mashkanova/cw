@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".view.DetailsActivity">
+
+            <ImageView
+                android:id="@+id/imageOfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:contentDescription="@string/product_image"
+                android:src="@drawable/dummy_data"
+                tools:scaleType="fitXY" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1dp"
+                android:background="@color/lightGray" />
+
+            <TextView
+                android:id="@+id/nameOfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen20sp"
+                tools:text="Apple iPhone 7 plus without Facetime - 32GB, 4LTC, Silver" />
+
+            <TextView
+                android:id="@+id/priceOfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen20sp"
+                android:textStyle="bold"
+                tools:text="2,399.00 $" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1dp"
+                android:background="@color/lightGray" />
+
+
+
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="@dimen/dimen20dp"
+                android:background="@drawable/custom_button_border2"
+                android:text="Записаться на примерку"
+                android:textAllCaps="false"
+                android:textColor="#DDA0B5"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
